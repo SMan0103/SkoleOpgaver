@@ -20,7 +20,6 @@ class Opgave4 {
  
        
         char temp;
- 
         int i = 0;
         while (i < arr.length) {
             int j = i + 1;

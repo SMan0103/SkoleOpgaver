@@ -35,6 +35,19 @@ public class Opgave7 {
         }
       }
     }
+  
+
+
+
   }
+
+  
+  
+  
+
+  
+  
+
+
 
 }
