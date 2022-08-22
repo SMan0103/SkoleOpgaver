@@ -29,7 +29,7 @@ public class haegtedeListe {
         return firstElement;
     }
 
-    public haegtedeListe getNextElement(haegtedeListe element) {
-        return element.nextElement;
+    public haegtedeListe getNextElement() {
+        return nextElement;
     }
 }
