@@ -14,12 +14,7 @@ public class Player  extends haegtedeListe{
 
             result += ((Player)tempElement).playerId + ", ";
 
-            tempElement = tempElement.getNextElement();
-
-            
-
-            
-            
+            tempElement = tempElement.getNextElement();      
         }
 
 
@@ -27,5 +22,22 @@ public class Player  extends haegtedeListe{
 
         return result;
     }
+
+   public static void removeElementWithId(int id) {
+        haegtedeListe tempElement = getFirstElement();
+        haegtedeListe prevElement = null;
+
+        while (tempElement != null) {
+            if (((Player)tempElement).playerId == id) {
+                if (tempElement == getFirstElement()) {
+                    removeNextElement(tempElement);
+                } else {
+                    removeNextElement(prevElement);
+                }
+            }
+            prevElement = tempElement;
+            tempElement = tempElement.getNextElement();
+        }
+   }
 
 }
