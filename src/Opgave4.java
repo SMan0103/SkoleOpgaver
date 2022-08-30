@@ -1,9 +1,5 @@
-import java.io.*;
-import java.util.Arrays;
 import java.util.Scanner;
  
-
-
 class Opgave4 {
  
     // Main driver method
@@ -38,5 +34,6 @@ class Opgave4 {
  
     
         System.out.println(arr);
+        hej5.close();
     }
 }

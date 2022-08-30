@@ -8,6 +8,10 @@ public class TreeNode {
     public long number;
 
     public static void PrintTree() {
-        System.out.println()
+        while (treetop != null) {
+            System.out.println(treetop.character + " " + treetop.number);
+            treetop = treetop.rightNode;
+        }
+
     }
 }

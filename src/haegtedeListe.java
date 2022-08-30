@@ -1,5 +1,3 @@
-import javax.lang.model.element.Element;
-
 public class haegtedeListe {
     
     // Navigation variables

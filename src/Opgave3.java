@@ -17,6 +17,6 @@ public class Opgave3 {
         System.out.println("Sorted: ");
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
-
+        input.close();
     }
 }

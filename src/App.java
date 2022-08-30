@@ -13,6 +13,8 @@ public class App {
 
             System.out.println(i2);
         }
+        
+        hej2.close();
 
     }
 }
