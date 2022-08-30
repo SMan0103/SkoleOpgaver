@@ -8,6 +8,6 @@ public class TreeNode {
     public long number;
 
     public static void PrintTree() {
-        Sys
+        System.out.println()
     }
 }
