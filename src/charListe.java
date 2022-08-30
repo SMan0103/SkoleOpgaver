@@ -108,7 +108,10 @@ public class charListe {
         while (firstElement.nextElement != null) {
             CombineLeast();
         }
-    TreeNode.treetop = firstElement.node;
+        //Saving the tree
+        TreeNode.treetop = firstElement.node;
+
+        
 
     }
 }
