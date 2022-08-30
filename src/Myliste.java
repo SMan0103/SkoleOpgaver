@@ -1,5 +1,3 @@
-import javax.lang.model.element.Element;
-
 public class Myliste {
 
     // Navigation variables

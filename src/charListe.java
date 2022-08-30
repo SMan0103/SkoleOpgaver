@@ -15,6 +15,7 @@ public class charListe {
             nextElement = firstElement;
             firstElement = this;
         }
+        
         node = new TreeNode();
         this.node.character = c;
         this.node.number = n;
@@ -69,8 +70,9 @@ public class charListe {
     }
 
     //Function for combining the two least common elements in the list
-    public static void CombineLeast() {
+    private static void CombineLeast() {
         // ToDo make work
+        if ( firstElement.nextElement == null) return; //Can't combine elements into a new element
         charListe low1 = firstElement;  
         charListe low2 = firstElement.nextElement;
         charListe tempElement = firstElement.nextElement.nextElement;
@@ -100,9 +102,13 @@ public class charListe {
         low1.node = tempNode;
         removeElement(low2);
         
-        
-        
+    }
+    //Må jeg være en del af githubben?
+    public static void GrowTree(){
+        while (firstElement.nextElement != null) {
+            CombineLeast();
+        }
+    TreeNode.treetop = firstElement.node;
 
-    
     }
 }

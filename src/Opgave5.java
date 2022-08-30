@@ -20,6 +20,7 @@ public class Opgave5 {
             System.exit(0);
 
         }
+        Ja.close();
     }
 
     private static int sqrt(float d) {
@@ -53,9 +54,10 @@ public class Opgave5 {
         System.out.println("r_1 = " + r_1);
         System.out.println("r_2 = " + r_2);
         
-    
+        A.close();
+        B.close();
+        C.close();
     }
-    
     
 }
 
