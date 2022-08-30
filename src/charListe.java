@@ -6,7 +6,6 @@ public class charListe {
     // Navigation variables
     private static charListe firstElement;
     private charListe nextElement;
-
     public TreeNode node;
 
     //ToDo change constructor so we can add a elements with nodes
