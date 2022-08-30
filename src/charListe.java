@@ -1,5 +1,3 @@
-import javax.lang.model.element.Element;
-
 public class charListe {
     
     //Import singly linked list and simple navigation variables
@@ -48,9 +46,7 @@ public class charListe {
     public charListe getNextElement() {
         return nextElement;
     }
-
-
-
+    //A way to remove elements with a specific value
     public static void removeElementWith(charListe element) {
         if (element == firstElement) {
             firstElement = firstElement.nextElement;
@@ -80,17 +76,33 @@ public class charListe {
         charListe tempElement = firstElement.nextElement.nextElement;
         // loop through the list and find the two least common elements
         while (tempElement != null) {
-            if (tempElement.node.number < low1.node.number) {
-                low2 = low1;
-                low1 = tempElement;
-            } else if (tempElement.node.number < low2.node.number) {
-                low2 = tempElement;
-            }
+            //Smuk kode, ikke lange navne på nogen måde
+            if (tempElement.node.number < low1.node.number || tempElement.node.number < low2.node.number) {
+                
+                if (low1.node.number < low2.node.number) {
+                    low2 = tempElement;
+                } else {
+                    low1 = tempElement;
+                } 
+            } 
+            //Go through the list
             tempElement = tempElement.nextElement;
         }
+        // Combine into new node and remove old ones
+        //Make new treenode
+        TreeNode tempNode = new TreeNode();
+        //Define left and right node as previous previous nodes
+        tempNode.leftNode = low1.node;
+        tempNode.rightNode = low2.node;
+        //Combine the two nodes as a sum
+        tempNode.number = low1.node.number + low2.node.number;
+        // insert new node into list
+        low1.node = tempNode;
+        removeElement(low2);
+        
+        
+        
+
     
     }
 }
-
-
-
