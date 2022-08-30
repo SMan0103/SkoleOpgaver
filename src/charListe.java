@@ -110,7 +110,6 @@ public class charListe {
         }
         //Saving the tree
         TreeNode.treetop = firstElement.node;
-
         
 
     }
